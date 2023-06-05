@@ -12,7 +12,6 @@ export const Link = styled(NavLink)`
     border-radius: 4px;
     color: black;
     font-weight: 500;
-    margin-bottom: 30px;
 
     &:hover{
         color: white;
@@ -23,4 +22,5 @@ export const Div = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 30px;
 `
