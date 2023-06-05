@@ -3,7 +3,9 @@ import { useLocation } from 'react-router-dom';
 
 import TweetCardList from 'components/TweetCardList';
  
-import { Container, Link } from './Tweets.styled'
+import { Container, Link, Div } from './Tweets.styled'
+
+import Filters from 'components/Filters';
 
 export const Tweets = () => {
     const {state} = useLocation();
@@ -11,7 +13,10 @@ export const Tweets = () => {
 
     return(
         <Container>
-            <Link to={current}>Go back</Link>
+            <Div>
+                <Link to={current}>Go back</Link>
+                <Filters />
+            </Div>
             <TweetCardList /> 
         </Container>
     );

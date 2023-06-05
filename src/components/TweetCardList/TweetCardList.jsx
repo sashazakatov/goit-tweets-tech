@@ -22,20 +22,20 @@ const TweetCardList = () => {
 
     return(
         <>
-        { isLoading ? <Loader /> :
-        (<Div>
-        <TweetList>
-            {filtredTweets.map((tweet) => 
-                <TweetItem key={tweet.id}>
-                    <TweetCard tweet={tweet}/>
-                </TweetItem>)}
-        </TweetList>
-        <Button 
-            type="button"
-            onClick={() => dispatch(incrementPage())}
-        >
-            load more
-        </Button>
+        { isLoading ? <Loader /> :(
+        <Div>
+            <TweetList>
+                {filtredTweets.map((tweet) => 
+                    <TweetItem key={tweet.id}>
+                        <TweetCard tweet={tweet}/>
+                    </TweetItem>)}
+            </TweetList>
+            <Button 
+                type="button"
+                onClick={() => dispatch(incrementPage())}
+            >
+                load more
+            </Button>
         </Div>
         )}
         </>

@@ -7,6 +7,7 @@ import storage from 'redux-persist/lib/storage'
 const initialState = {
     tweets: [],
     follows: [],
+    filter: 'all',
     isLoading: false,
     page: 1,
 }
@@ -21,6 +22,12 @@ const tweetsSlice = createSlice({
             }
             state.page += 1;
         },
+        resetPage(state){
+            state.page = 1;
+        },
+        changeFilter(state, actions){
+            state.filter = actions.payload;
+        }
     },
     extraReducers:(bilder) => {
         bilder
@@ -64,4 +71,4 @@ export const tweetsPersistConfig = {
 }
 
 export const tweetsReducer = tweetsSlice.reducer;
-export const { incrementPage } = tweetsSlice.actions;
+export const { incrementPage, changeFilter, resetPage } = tweetsSlice.actions;

@@ -19,3 +19,8 @@ export const Link = styled(NavLink)`
         background-color: orangered;
     }
 `;
+export const Div = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+`
