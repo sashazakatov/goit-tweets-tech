@@ -1,8 +1,8 @@
 {
-  "name": "tweets",
+  "name": "goit-tweets-tech",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sashazakatov.github.io/tweets",
+  "homepage": "https://sashazakatov.github.io/goit-tweets-tech",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.16.5",

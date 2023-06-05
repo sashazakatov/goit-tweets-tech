@@ -11,7 +11,7 @@ import { PersistGate } from 'redux-persist/integration/react';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename='/tweets'>
+    <BrowserRouter basename='/goit-tweets-tech'>
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
           <App />
