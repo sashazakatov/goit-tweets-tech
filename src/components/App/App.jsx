@@ -8,11 +8,11 @@ import Tweets from "pages/Tweets";
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<SharedLayout />}>
-        <Route index element={<Home/>}/>
-        <Route path="/tweets" element={<Tweets />}/>
+      <Route path="/" component={<SharedLayout />}>
+        <Route index component={<Home/>}/>
+        <Route path="/tweets" component={<Tweets />}/>
       </Route>
-      <Route path="*" element={<Navigate to="/" replace />}/>
+      <Route path="*" component={<Navigate to="/" replace />}/>
     </Routes>
   );
 }
