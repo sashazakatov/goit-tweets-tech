@@ -1,9 +1,9 @@
 import { useRef } from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 import TweetCardList from 'components/TweetCardList';
  
-import { Container } from './Tweets.styled'
+import { Container, Link } from './Tweets.styled'
 
 export const Tweets = () => {
     const {state} = useLocation();
@@ -11,7 +11,7 @@ export const Tweets = () => {
 
     return(
         <Container>
-            <NavLink to={current}>Go back</NavLink>
+            <Link to={current}>Go back</Link>
             <TweetCardList /> 
         </Container>
     );

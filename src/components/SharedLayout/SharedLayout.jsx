@@ -1,17 +1,17 @@
-import { Outlet, NavLink, useLocation } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 
-import { Main } from "./SharedLayout.styled";
+import { Main, Navigation, Link, Header } from "./SharedLayout.styled";
 const SharedLayout = () => {
     const location = useLocation();
 
     return(
     <>
-        <header>
-            <nav>
-                <NavLink to='/'>Home</NavLink>
-                <NavLink to='tweets' state={{from: location}}>Tweets</NavLink>
-            </nav>  
-        </header>
+        <Header>
+            <Navigation>
+                <Link to='/'>Home</Link>
+                <Link to='tweets' state={{from: location}}>Tweets</Link>
+            </Navigation>  
+        </Header>
         <Main>
             <Outlet />
         </Main>

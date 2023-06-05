@@ -9,7 +9,7 @@ import Loader from "components/Loader";
 
 import { incrementPage } from 'store/tweets/slice'
 
-import { TweetList, TweetItem } from './TweetCardList.styled'
+import { TweetList, TweetItem, Button, Div } from './TweetCardList.styled'
 
 const TweetCardList = () => {
     const isLoading = useSelector(selectorIsLoading);
@@ -22,19 +22,22 @@ const TweetCardList = () => {
 
     return(
         <>
-        { isLoading ? <Loader /> : 
+        { isLoading ? <Loader /> :
+        (<Div>
         <TweetList>
             {filtredTweets.map((tweet) => 
                 <TweetItem key={tweet.id}>
                     <TweetCard tweet={tweet}/>
                 </TweetItem>)}
-        </TweetList>}
-        <button 
+        </TweetList>
+        <Button 
             type="button"
             onClick={() => dispatch(incrementPage())}
         >
             load more
-        </button>
+        </Button>
+        </Div>
+        )}
         </>
     )
 }
