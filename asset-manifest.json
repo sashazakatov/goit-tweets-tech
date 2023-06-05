@@ -1,17 +1,15 @@
 {
   "files": {
     "main.css": "/goit-tweets-tech/static/css/main.e51e636b.css",
-    "main.js": "/goit-tweets-tech/static/js/main.ff87e80c.js",
-    "static/js/787.d43bf7aa.chunk.js": "/goit-tweets-tech/static/js/787.d43bf7aa.chunk.js",
+    "main.js": "/goit-tweets-tech/static/js/main.0b1f839d.js",
     "static/media/picture.png": "/goit-tweets-tech/static/media/picture.eabcd2b4527071c1b93a.png",
     "static/media/logo.svg": "/goit-tweets-tech/static/media/logo.e917114d7945c04c85a8946a331d28b6.svg",
     "index.html": "/goit-tweets-tech/index.html",
     "main.e51e636b.css.map": "/goit-tweets-tech/static/css/main.e51e636b.css.map",
-    "main.ff87e80c.js.map": "/goit-tweets-tech/static/js/main.ff87e80c.js.map",
-    "787.d43bf7aa.chunk.js.map": "/goit-tweets-tech/static/js/787.d43bf7aa.chunk.js.map"
+    "main.0b1f839d.js.map": "/goit-tweets-tech/static/js/main.0b1f839d.js.map"
   },
   "entrypoints": [
     "static/css/main.e51e636b.css",
-    "static/js/main.ff87e80c.js"
+    "static/js/main.0b1f839d.js"
   ]
 }
