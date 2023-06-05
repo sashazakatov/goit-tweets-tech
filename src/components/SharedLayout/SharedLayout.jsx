@@ -9,7 +9,7 @@ const SharedLayout = () => {
         <header>
             <nav>
                 <NavLink to='/'>Home</NavLink>
-                <NavLink to='/tweets' state={{from: location}}>Tweets</NavLink>
+                <NavLink to='tweets' state={{from: location}}>Tweets</NavLink>
             </nav>  
         </header>
         <Main>
