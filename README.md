@@ -9,7 +9,6 @@ The project also contains a pagination of pages. there are 3 user cards on each 
 
 <p>Following is true</p>
 <img src='public/screen2.jpg'>
-<br /><br />
 
 <h2>Technical Task</h2>
 <p>
@@ -19,7 +18,6 @@ When the page is updated, the button stays in the "Subscribed" state with the ap
 Click the button resets the button once again, changing the text and color back to "Subscribe" and decrementing the number of subscribers by 1.
 The user's actions must be recorded, and the final result must be preserved even after a page refresh.
 </p>
-
 
 <h2>User Object</h2>
 <p>
@@ -31,3 +29,7 @@ followers: Number of followers for the user.
 avatar: URL of the user's avatar image. 
 </p>
 
+<h2>Project problems</h2>
+<p>
+If you write a path in the URL string, for example /tweets, the following path appears /goit-tweets-tech/?/tweets. It's most likely a build issue.
+</p>
