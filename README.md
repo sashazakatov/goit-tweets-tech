@@ -5,10 +5,10 @@ The project also contains a pagination of pages. there are 3 user cards on each 
 <h2>Screenshots cards</h2>
 
 <p>Following is false</p>
-<!-- <img src=/flw.png> -->
+<img src='public/screen1.jpg'>
 
 <p>Following is true</p>
-<!-- <img src=/flwg.png> -->
+<img src='public/screen2.jpg'>
 <br /><br />
 
 <h2>Technical Task</h2>
