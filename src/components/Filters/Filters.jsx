@@ -1,5 +1,8 @@
 import { useDispatch } from "react-redux";
 import { changeFilter, resetPage } from "store/tweets/slice";
+import MenuItem from '@mui/material/MenuItem';
+import Select from '@mui/material/Select';
+import InputLabel from '@mui/material/InputLabel';
 
 
 const Filters = () => {
@@ -11,14 +14,16 @@ const Filters = () => {
     } 
 
     return(
-        <label>
+        <InputLabel>
             Filter
-            <select onChange={handelSelect}>
-                <option value="all">All</option>
-                <option value="follow">Follow</option>
-                <option value="following">Following</option>
-            </select>
-        </label>
+            <Select 
+            style={{ width: 150 }}
+             onChange={handelSelect}>
+                <MenuItem value="all">All</MenuItem>
+                <MenuItem value="follow">Follow</MenuItem>
+                <MenuItem value="following">Following</MenuItem>
+            </Select>
+        </InputLabel>
     );
 }
 export default Filters;
